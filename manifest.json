@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Facebook photos-tagged",
+  "description": "This extension will add a button on Facebook to show photos that the current profile was tagged in",
+  "version": "0.1",
+  
+ "icons": { "16": "icon.png",
+           "48": "icon.png",
+          "128": "icon.png" },
+  "permissions": [
+   "activeTab"
+   ],
+   "content_scripts": [
+    {
+      "matches": ["*://www.facebook.com/*"],
+      "js": ["addphotosofbutton.js"],
+	  "run_at": "document_start"
+    }
+  ]
+}
