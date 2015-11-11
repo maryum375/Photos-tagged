@@ -14,7 +14,7 @@ function addPhotosButton() {
     if (!targetId) {
         return;
     }
-    var parentElement = document.querySelector("#fbTimelineHeadline ._70k div");
+    var parentElement = document.querySelector("#fbTimelineHeadline ._70k div div");
     if (parentElement) {
         var currentLanguage = getCurrentFacebookLanguage();
         var btn = CreateButtonElement(targetId, currentLanguage);
