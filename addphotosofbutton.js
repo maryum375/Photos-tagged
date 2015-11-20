@@ -14,11 +14,11 @@ function addPhotosButton() {
     if (!targetId) {
         return;
     }
-    var parentElement = document.querySelector("#fbTimelineHeadline ._70k div div");
+    var parentElement = document.querySelector("._3dc.lfloat._ohe._5brz");
     if (parentElement) {
         var currentLanguage = getCurrentFacebookLanguage();
         var btn = CreateButtonElement(targetId, currentLanguage);
-        parentElement.insertBefore(btn, parentElement.children[parentElement.childNodes.length - 1]);
+        parentElement.insertBefore(btn, parentElement.children[parentElement.childNodes.length]);
     }
 }
 
@@ -27,7 +27,7 @@ function addPhotosButton() {
  */
 function CreateButtonElement(targetId, language) {
     var btn = document.createElement("a");
-    btn.className = "_6-6";
+    btn.className = "_3c_ _3sz";
     btn.innerText = getInnerTextByCurrentLanguage(language);
     btn.setAttribute("id", "photos-of-extension");
     btn.setAttribute("target-id", targetId);
