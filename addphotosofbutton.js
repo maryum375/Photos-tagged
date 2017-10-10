@@ -78,7 +78,7 @@ function getInnerTextByCurrentLanguage(fbLanguage) {
             buttonText = "عکس برچسب زده";
             break;
         default:
-            console.log(fbLanguage + " is not a supported language. Please contact the developers of 'Facebook photos-tagged' extension at:" +
+            console.log(fbLanguage + " is not a supported language. Please contact the developers of 'photos-tagged' extension at:" +
                 "https://chrome.google.com/webstore/detail/facebook-photos-tagged/lbacdacnofcaobjedeegmoakkfbpndpp/support");
             buttonText = "Photos Tagged";
             break;
